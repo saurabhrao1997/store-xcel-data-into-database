@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    {{>headerLink}}
+    
+
+
+
+</head>
+<body>
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-md-10 col-sm-12">
+                 {{>navbar}}
+                <div class="row">
+                    <div class="col-md-12">
+                             <div class="ticket" style="display:flex; flex-direction:row; justify-content:space-around; border:1px solid black; margin:100px auto">
+                  <div class="logo" style="margin: 20px;text-align:center">
+                      <i class="fa-solid fa-plane-departure" style="font-size: 40px; margin:10px"></i>
+                      <p>indigo</p>
+                  </div>
+                  <div class="fristTime" style="margin: 20px; text-align:center">
+                      <h4>{{flew}}</h4>
+                      <p>{{fristLocation}}</p>
+                      <p>{{departure}}</p>
+                  </div>
+                  <div class="hours" style="margin-top:30px; align-items:center;text-align:center">
+                      <p>1:35 min</p>
+                      <hr>
+                      <p>direct</p>
+                  </div>
+
+                  <div class="secondTime" style="margin: 20px;text-align:center">
+                  
+                        <h4>{{landing}}</h4>
+                      <p>{{secondLocation}}</p>
+                      <p>{{departure}}</p>
+                  </div>
+                  <div class="price" style="margin: 20px;text-align:center">
+                      <h3 style="text-align:center; margin-bottom:40px">{{price}}</h3>
+                        <button id="registrationButton" style="background-color:blueviolet;color:aliceblue; width:100px; border-radius:30px">book</button>
+                  </div>
+              </div>
+                    </div>
+                </div>
+
+         
+
+      <div id="details" style="display:none; flex-direction:column; justify-content:center; align-items:center" >
+                     <h4>traveller Details</h4>
+                     <p>before travel detailes you must be <strong>login</strong></p>
+                     <div>
+                         <input type="text" placeholder="frist name">
+                         <input type="text" placeholder="last name">
+                         <input type="radio" id="male" name="gender" value="male"><label for="male">male</label>
+                         <input type="radio" id="female" name="gender" value="female"><label for="female">female</label>
+                     </div>
+              
+
+               <h4>booking details send to </h4>
+               <div>
+                   <label for="mobile">mobile no</label>
+                   <input type="numbler" id="mobile">
+                     <label for="email">email</label>
+                   <input type="email" id="email">
+               </div>
+      </div>
+             
+
+
+            </div>
+        </div> 
+    </div>
+      
+<script src="main.js"></script>
+</body>
+</html>
+
+
+
+ 
