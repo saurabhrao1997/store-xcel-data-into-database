@@ -8,11 +8,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {{>headerLink}}
     <title>about</title>
+
+    <style>
+        .container{
+            margin-top: 50px;
+            width: 60%;
+            height: 200px;
+            border: 1px solid black;
+
+        }
+
+        .formData{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .file{
+            border: none;
+            outline: none;
+            margin-top: 50px;
+        }
+
+
+        .btn1{
+            width: 100px;
+            font-size: 20px;
+            border-radius: 10px;
+            box-shadow:1px 1px 1px rgba(0,0,0,0.5);
+            background-color: green;
+            color: azure;
+
+        }
+
+
+    </style>
 </head>
 <body>
 
-{{>navbar}}
-    <h1>i am on about page</h1>
-    
+
+   <div class="container">
+       <form class="formData" action="/" method="post" enctype="multipart/form-data">  
+<input type="file" class="file" name="csv" accept='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel'><br><br>  
+<div class="text-center"><button class="btn1" type="submit">submit</button></div>     
+</form> 
+   </div>
 </body>
 </html>

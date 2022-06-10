@@ -6,6 +6,7 @@ console.log(details)
 btn.addEventListener("click",function (){
     // details.style.display = "flex"
     console.log("hello saurabh")
+    alert("helow guys")
 })
 
 
